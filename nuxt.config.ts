@@ -1,6 +1,7 @@
 import { defineNuxtConfig } from 'nuxt'
+import manifestJson from './lib/context/context-manifest.json';
+import type { ManifestV2 } from '@uniformdev/context';
 
-// https://v3.nuxtjs.org/api/configuration/nuxt.config
 export default defineNuxtConfig({
     modules: [
         [
@@ -8,6 +9,8 @@ export default defineNuxtConfig({
             {
                 projectId: process.env.UNIFORM_PROJECT_ID,
                 readOnlyApiKey: process.env.UNIFORM_API_KEY,
+                manifest: manifestJson as ManifestV2,
+                defaultConsent: true,
             },
         ],
     ],
