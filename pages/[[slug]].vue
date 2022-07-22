@@ -2,10 +2,8 @@
 import { resolveRenderer } from "../components/componentMapping";
 
 const { $useComposition } = useNuxtApp();
-
-const { data } = await $useComposition({ slug: `/` });
+const { data } = await $useComposition({ slug: "/" });
 //const composition = computed(() => data.value.composition);
-
 const { data: composition } = await useEnhance(data);
 </script>
 
@@ -15,10 +13,6 @@ const { data: composition } = await useEnhance(data);
     :data="composition"
     :resolve-renderer="resolveRenderer"
   >
-    <SlotContent name="recepies" />
+    <SlotContent name="recipiesContent" />
   </Composition>
-
-  <pre>
-    {{ composition }}
-  </pre>
 </template>
