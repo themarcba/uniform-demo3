@@ -6,5 +6,8 @@ const props = defineProps<{
 </script>
 
 <template>
-  <pre>{{ component.parameters }}</pre>
+  <fieldset>
+    <legend>component</legend>
+    <pre>{{ component.parameters }}</pre>
+  </fieldset>
 </template>
