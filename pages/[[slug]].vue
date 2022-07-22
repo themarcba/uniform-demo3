@@ -4,9 +4,9 @@ import { resolveRenderer } from "../components/componentMapping";
 const { $useComposition } = useNuxtApp();
 
 const { data } = await $useComposition({ slug: `/` });
-const composition = computed(() => data.value.composition);
+//const composition = computed(() => data.value.composition);
 
-//const { data: composition } = await useEnhance(data);
+const { data: composition } = await useEnhance(data);
 </script>
 
 <template>
