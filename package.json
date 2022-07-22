@@ -1,0 +1,23 @@
+{
+    "private": true,
+    "scripts": {
+        "build": "nuxt build",
+        "dev": "nuxt dev",
+        "generate": "nuxt generate",
+        "preview": "nuxt preview"
+    },
+    "devDependencies": {
+        "nuxt": "3.0.0-rc.6"
+    },
+    "dependencies": {
+        "@contentful/rich-text-html-renderer": "^15.13.1",
+        "contentful": "^9.1.33",
+        "@uniformdev/canvas-contentful": "^16.2.4",
+        "@uniformdev/canvas": "16.0.1-nuxt.166",
+        "@uniformdev/canvas-vue": "16.0.1-nuxt.166",
+        "@uniformdev/cli": "16.0.1-nuxt.166",
+        "@uniformdev/context": "16.0.1-nuxt.166",
+        "@uniformdev/context-vue": "16.0.1-nuxt.166",
+        "@uniformdev/uniform-nuxt": "16.0.1-nuxt.166"
+    }
+}
